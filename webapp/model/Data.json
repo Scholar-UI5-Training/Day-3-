@@ -1,0 +1,88 @@
+{
+  "Invoices": [
+	{
+	  "ProductName": "Pineapple",
+	  "ProductId": "FR-101",
+	  "Quantity": 21,
+	  "QuantityUnit": "pcs.",
+	  "ExtendedPrice": 87.2000,
+	  "ShipperName": "Fun Inc.",
+	  "ShippedDate": "2015-04-01T00:00:00",
+	  "Status": "S",
+	  "Currency": "EUR",
+	  "Category": "Fruits"
+	},
+	{
+	  "ProductName": "Apple",
+	  "ProductId": "FR-102",
+	  "Quantity": 15,
+	  "QuantityUnit": "pcs.",
+	  "ExtendedPrice": 50.0000,
+	  "ShipperName": "Fun Inc.",
+	  "ShippedDate": "2015-04-01T00:00:00",
+	  "Status": "S",
+	  "Currency": "EUR",
+	  "Category": "Fruits"
+	},
+	{
+	  "ProductName": "Oranges",
+	  "ProductId": "FR-103",
+	  "Quantity": 25,
+	  "QuantityUnit": "pcs.",
+	  "ExtendedPrice": 100.2000,
+	  "ShipperName": "Fun Inc.",
+	  "ShippedDate": "2015-04-01T00:00:00",
+	  "Status": "S",
+	  "Currency": "EUR",
+	  "Category": "Fruits"
+	},
+	{
+	  "ProductName": "Milk",
+	  "ProductId": "DR-101",
+	  "Quantity": 4,
+	  "QuantityUnit": "pcs.",
+	  "ExtendedPrice": 9.99999,
+	  "ShipperName": "ACME",
+	  "ShippedDate": "2015-02-18T00:00:00",
+	  "Status": "F",
+	  "Currency": "EUR",
+	  "Category": "Dairy"
+	},
+	{
+	  "ProductName": "Canned Beans",
+	  "ProductId": "CP-101",
+	  "Quantity": 3,
+	  "QuantityUnit": "pcs.",
+	  "ExtendedPrice": 6.85000,
+	  "ShipperName": "ACME",
+	  "ShippedDate": "2015-03-02T00:00:00",
+	  "Status": "S",
+	  "Currency": "EUR",
+	  "Category": "Canned Products"
+	},
+	{
+	  "ProductName": "Green Salad",
+	  "ProductId": "SAL-101",
+	  "Quantity": 2,
+	  "QuantityUnit": "bags",
+	  "ExtendedPrice": 8.8000,
+	  "ShipperName": "ACME",
+	  "ShippedDate": "2015-04-12T00:00:00",
+	  "Status": "S",
+	  "Currency": "EUR",
+	  "Category": "Salad"
+	},
+	{
+	  "ProductName": "Bread",
+	  "ProductId": "BK-101",
+	  "Quantity": 1,
+	  "QuantityUnit": "pcs.",
+	  "ExtendedPrice": 2.71212,
+	  "ShipperName": "Fun Inc.",
+	  "ShippedDate": "2015-01-27T00:00:00",
+	  "Status": "F",
+	  "Currency": "EUR",
+	  "Category": "Baked"
+	}
+  ]
+}

@@ -1,0 +1,53 @@
+<mvc:View controllerName="com.demo.TrainingDemo.controller.View" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" showHeader="false">
+					<content>
+						<Table id="idInvoiceTable" class="sapUiResponsiveMargin" width="auto" mode="Delete" delete="removeListItem" items="{invoice>/Invoices}">
+							<headerToolbar>
+								<OverflowToolbar>
+									<Title text="{i18n>invoiceListTitle}" level="H2"/>
+									<ToolbarSpacer/>
+									<Button tooltip="Add" icon="sap-icon://add" press="addListItem"/>
+									<Button tooltip="Sort" icon="sap-icon://sort" press="handleSortButtonPressed"/>
+									<Button tooltip="Filter" icon="sap-icon://filter" press="handleFilterButtonPressed"/>
+									<Button tooltip="Group" icon="sap-icon://group-2" press="handleGroupButtonPressed"/>
+									<ToggleButton icon="sap-icon://menu" tooltip="Enable Custom Context Menu" press="onToggleContextMenu"/>
+								</OverflowToolbar>
+							</headerToolbar>
+							<infoToolbar>
+								<OverflowToolbar id="filterBar" visible="false">
+									<Text id="filterLabel"/>
+								</OverflowToolbar>
+							</infoToolbar>
+							<columns>
+								<Column><Text text="Product"/></Column>
+								<Column><Text text="Quantity"/></Column>
+								<Column><Text text="Category"/></Column>
+								<Column><Text text="Supplier"/></Column>
+								<Column><Text text="Order Status"/></Column>
+								<Column><Text text="Price"/></Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<ObjectIdentifier title="{invoice>ProductName}" text="{invoice>ProductId}"/>
+										<ObjectNumber number="{invoice>Quantity}" unit="{invoice>QuantityUnit}"/>
+										<Text text="{invoice>Category}"/>
+										<Text text="{invoice>ShipperName}"/>
+										<ObjectStatus text="{ path: 'invoice>Status', formatter: '.formatter.statusText' }"
+											state="{path: 'invoice>Status', formatter: '.formatter.statusState'}"/>
+										<ObjectNumber
+											number="{ parts:[{path:'invoice>ExtendedPrice'},{path:'invoice>Currency'}], type: 'sap.ui.model.type.Currency', formatOptions: {showMeasure: false} }"
+											unit="{invoice>Currency}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
